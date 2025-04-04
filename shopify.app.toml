@@ -3,7 +3,7 @@
 client_id = "9efd552fd42caa067ce0fa5b682198db"
 name = "banner-app"
 handle = "banner-app-66"
-application_url = "https://powerpoint-drawn-projector-neon.trycloudflare.com"
+application_url = "https://anticipated-gs-strategies-funeral.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://powerpoint-drawn-projector-neon.trycloudflare.com/auth/callback",
-  "https://powerpoint-drawn-projector-neon.trycloudflare.com/auth/shopify/callback",
-  "https://powerpoint-drawn-projector-neon.trycloudflare.com/api/auth/callback"
+  "https://anticipated-gs-strategies-funeral.trycloudflare.com/auth/callback",
+  "https://anticipated-gs-strategies-funeral.trycloudflare.com/auth/shopify/callback",
+  "https://anticipated-gs-strategies-funeral.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
