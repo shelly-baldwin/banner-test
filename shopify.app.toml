@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9efd552fd42caa067ce0fa5b682198db"
+name = "banner-app"
+handle = "banner-app-66"
+application_url = "https://powerpoint-drawn-projector-neon.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://powerpoint-drawn-projector-neon.trycloudflare.com/auth/callback",
+  "https://powerpoint-drawn-projector-neon.trycloudflare.com/auth/shopify/callback",
+  "https://powerpoint-drawn-projector-neon.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
